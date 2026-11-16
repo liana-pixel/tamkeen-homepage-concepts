@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Tamkeen Homepage Concepts</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap">
+<style>
+/* Layout: a quiet two-card chooser. Deep Navy and white from the Tamkeen palette, coral only on the link arrows. */
+:root{--bg:#F3F5F9;--fg:#1B1833;--mute:#5B5F78;--card:#fff;--line:#DDE2EC;--royal:#20418A;--coral:#EF434D;--font:"Plus Jakarta Sans",Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14122B;--fg:#fff;--mute:rgba(255,255,255,.74);--card:#25224A;--line:rgba(255,255,255,.16);--royal:#8DBBE8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14122B;--fg:#fff;--mute:rgba(255,255,255,.74);--card:#25224A;--line:rgba(255,255,255,.16);--royal:#8DBBE8;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);line-height:1.55;padding-block:clamp(40px,8vw,96px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:980px;margin-inline:auto;display:grid;gap:40px}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;letter-spacing:-.035em;font-weight:800;text-wrap:balance;max-width:18ch}
+.lead{font-size:1.1rem;color:var(--mute);max-width:60ch;margin-top:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+a.card{display:flex;flex-direction:column;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;color:inherit;text-decoration:none;transition:transform .2s,border-color .2s}
+a.card:hover,a.card:focus-visible{transform:translateY(-4px);border-color:var(--royal);outline:none}
+a.card h2{font-size:1.5rem;letter-spacing:-.02em}
+a.card p{color:var(--mute);min-width:0}
+a.card ul{margin:0;padding-left:1.1em;color:var(--mute);display:grid;gap:4px}
+.go{margin-top:auto;padding-top:10px;font-weight:700;display:inline-flex;gap:8px;align-items:center}
+.go i{font-style:normal;color:var(--coral)}
+.note{color:var(--mute);font-size:.95rem;max-width:70ch;border-top:1px solid var(--line);padding-top:20px}
+@media (prefers-reduced-motion:reduce){a.card{transition:none}}
+</style></head><body>
+<main>
+  <header>
+    <h1>Tamkeen homepage concepts</h1>
+    <p class="lead">Two directions for the refreshed tamkeen.bh homepage, built from the 2026 brand guidelines and the IGA homepage components. Both are open in a new tab and scroll through the full page.</p>
+  </header>
+  <div class="grid">
+    <a class="card" href="concept-a.html" target="_blank" rel="noopener">
+      <h2>Concept A</h2>
+      <p>Structured and pattern-led.</p>
+      <ul><li>Solid blocks, Deep Navy alternating with white</li><li>GrowthMark patterns as graphic shapes</li><li>Full-bleed hero photos with a navy text panel</li></ul>
+      <span class="go">Open concept A <i aria-hidden="true">→</i></span>
+    </a>
+    <a class="card" href="concept-b.html" target="_blank" rel="noopener">
+      <h2>Concept B</h2>
+      <p>Immersive and cinematic.</p>
+      <ul><li>All dark, with a smooth Royal Blue to Sky glow</li><li>Semi-transparent cards in the logo shape</li><li>Large photography and big type</li></ul>
+      <span class="go">Open concept B <i aria-hidden="true">→</i></span>
+    </a>
+  </div>
+  <p class="note">These are quick brainstorm directions, not final designs. English only. Statistics, news, events, laws, FAQ answers and story quotes are sample content. The Program Finder is a placeholder until the audience research is done.</p>
+</main>
+</body></html>
